@@ -56,3 +56,16 @@ Passes an argument, Delta:
 
 ### drop.dragndrop
 Fired when user lets go of mouse button
+
+Author
+------
+
+http://github.com/tbrd
+Tom Hamshere
+
+License
+-------
+
+Copyright 2011 Twitter, Inc.
+
+Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
