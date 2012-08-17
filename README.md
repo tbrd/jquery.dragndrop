@@ -16,10 +16,23 @@ Example usage
         handle: '.drag-handle'
     });
 
-Options:         default
-translateY       true        allow movement on Y axis
-translateX       true        allow movement on X axis
-boundary         'body'      selector, jQuery object or function returning jQuery object
+Options
+-------
+
+### translateY
+Boolean
+default: true
+Allow movement on Y axis
+
+### translateX
+Boolean
+default: true
+allow movement on X axis
+
+### boundary
+String, Function or jQuery object
+Default: 'body'
+Selector or function returning jQuery object
 
 In some use cases, it won't be possible to set the boundary until after
 the initialisation of the draggable. In this case, settings.boundary should
@@ -28,11 +41,18 @@ be a function which returns a jQuery object
 Events
 ------
 
-start.dragndrop      user starts to move element     args: event
-drag.dragndrop       user moves element              args: event, Delta
-drop.dragndrop       user drops element              args: event
+### start.dragndrop
+Fired once user has held mouse button down over target element and moved mouse
+
+### drag.dragndrop
+Fired continuously while user moves mouse while holding mouse button after start
+
+Passes an argument, Delta:
 
     Delta: {
         x: movement on y axis (px)
         y: movement on y axis (px)
     }
+
+### drop.dragndrop
+Fired when user lets go of mouse button
