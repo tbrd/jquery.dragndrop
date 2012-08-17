@@ -10,7 +10,11 @@ If a handle is provided, the drag event will be bound to the handle element whil
 Example usage
 -------------
 
-$('.draggable').dragndrop({translateY: true, boundary: '.boundary'});
+    $('.draggable').dragndrop({
+        translateY: true,
+        boundary: 'body',
+        handle: '.drag-handle'
+    });
 
 Options:         default
 translateY       true        allow movement on Y axis
